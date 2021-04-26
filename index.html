@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="page">
+    <header class="page__header">
+      <nav class="breadcrumbs">
+        <a href="javascript:void(0);">Dashboard</a>
+        <a href="javascript:void(0);">Main</a>
+        <a href="javascript:void(0);">Home</a>
+      </nav>
+
+      <div class="form-wrapper">
+        <form name="search_form" id="search_form">
+          <input name="search_text" type="search" placeholder="Search..." autofocus />
+
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <nav class="page__navigation">
+      <a href="javascript:void(0)">Welcome Peldi</a>
+      <a href="javascript:void(0)">History</a>
+      <a href="javascript:void(0)">Preferences</a>
+      <a href="javascript:void(0)">Administration</a>
+      <a href="javascript:void(0)">Log Out</a>
+    </nav>
+
+    <aside class="page__aside">
+      <h1 class="page__title">Wiki</h1>
+
+      <nav class="aside__navigation">
+        <a href="javascript:void(0)">Page Operations</a>
+        <a href="javascript:void(0)">Browse Space</a>
+        <a href="javascript:void(0)">Add Content</a>
+      </nav>
+    </aside>
+
+    <main class="page__main">
+      <h2 class="title visible">Search something</h2>
+
+      <div class="search-results">
+        <h2 class="search-results__title">Search results:</h2>
+        <div class="search-results__list"></div>
+      </div>
+    </main>
+
+    <div class="modal">
+      <div class="modal__container">
+        <span class="modal__close">Close</span>
+        <h2 class="modal__title"></h2>
+        <div class="modal__content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>

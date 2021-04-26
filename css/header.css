@@ -1,0 +1,27 @@
+.page {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "header header header header header header header header"
+    "aside aside nav nav nav nav nav nav"
+    "aside aside main main main main main main";
+}
+
+.page__header {
+  display: flex;
+  justify-content: space-between;
+
+  grid-area: header;
+}
+
+.page__navigation {
+  grid-area: nav;
+}
+
+.page__aside {
+  grid-area: aside;
+}
+
+.page__main {
+  grid-area: main;
+}

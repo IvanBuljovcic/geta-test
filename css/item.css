@@ -1,0 +1,41 @@
+.item {
+  padding: 0.5rem;
+  
+  border: 1px solid var(--color-border);
+  
+  color: var(--color-prim);
+}
+
+.item__title {
+  display: inline;
+  
+  border-bottom: 1px solid var(--color-link);
+  
+  color: var(--color-link);
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  transition: color .2s linear;
+}
+
+.item__title:hover,
+.item__title:focus,
+.item__title:active {
+  color: var(--color-link-hover);
+}
+
+.item__desc {
+  margin: .4em 0;
+  
+  color: var(--color-border);
+  font-size: 1.2rem;
+}
+
+.item__exc {
+  margin-bottom: 1em;
+
+  color: var(--color-border);
+  font-size: 1rem;
+  line-height: 1.2;
+}

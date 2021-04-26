@@ -1,0 +1,18 @@
+.page__main {
+  grid-area: main;
+
+  border: 1px solid var(--color-border);
+}
+
+.page__main .title {
+  display: none;
+  padding: 1em;
+  margin-bottom: 1em;
+  
+  color: var(--color-sec);
+  font-size: 2rem;
+}
+
+.page__main .title.visible {
+  display: block;
+}

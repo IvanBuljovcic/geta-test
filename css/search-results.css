@@ -1,0 +1,29 @@
+.search-results {
+  display: none;
+  padding: 2rem;
+  flex-flow: column;
+}
+
+.search-results.visible {
+  display: flex;
+}
+
+.search-results__title {
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--color-sec);
+  
+  color: var(--color-sec);
+  font-size: 2rem;
+}
+
+.search-results__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .search-results__list {
+    grid-template-columns: 1fr;
+  }
+}
